@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomImageView">
+        <!--view设置模式，参考com\example\custom_imageview\VIEW_MODE.java-->
+        <attr name="viewMode" format="integer">
+            <enum name="CIRCLE_RECT" value="1"/>
+            <enum name="CIRCLE" value="2"/>
+            <enum name="RECT" value="3"/>
+        </attr>
+        <!--圆角矩形四角角度-->
+        <attr name="roundX" format="integer"/>
+        <attr name="roundY" format="integer"/>
+        <!--文件模式-->
+        <attr name="fileMode" format="integer">
+            <enum name="DEFAULT" value="1"/>
+            <enum name="URI" value="2"/>
+            <enum name="PATH" value="3"/>
+        </attr>
+        <!--文件编辑,uri、路径、默认、资源id-->
+        <attr name="theFile" format="string"/>
+    </declare-styleable>
+</resources>
