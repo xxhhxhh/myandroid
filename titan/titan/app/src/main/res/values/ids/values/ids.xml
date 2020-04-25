@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--页面切换-->
+    <item name="bottomPageShower" type="id"/>
+    <!--确认-->
+    <item name="confirm" type="id"/>
+
+    <!--选项栏-->
+    <item name="deusername" type="id"/>
+    <item name="delabel" type="id"/>
+    <item name="toReportThis" type="id"/>
+</resources>

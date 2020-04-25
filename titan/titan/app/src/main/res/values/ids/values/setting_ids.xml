@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--设置中各选项的id,从1000开始-->
+    <!--用户信息按钮-->
+    <item name="setUserInfo" type="id"/>
+    <!--隐私设置按钮-->
+    <item name="setUserPrivacy" type="id"/>
+    <!--账号安全按钮-->
+    <item name="setUserSecurity" type="id"/>
+    <!--青少年模式开关-->
+    <item name="setYouthModel" type="id"/>
+    <!--注销登录-->
+    <item name="logOut" type="id"/>
+    <!--用户信息-->
+    <item name="editUserInfo" type="id"/>
+    <item name="saveUserInfo" type="id"/>
+    <!--用户名-->
+    <item name="username" type="id"/>
+    <!--密码-->
+    <item name="password" type="id"/>
+    <!--邮箱-->
+    <item name="email" type="id"/>
+    <!--昵称-->
+    <item name="nickName" type="id"/>
+    <!--姓名-->
+    <item name="realName" type="id"/>
+    <!--出生日期-->
+    <item name="birthday" type="id"/>
+    <!--爱好-->
+    <item name="loveThing" type="id"/>
+    <!--备注-->
+    <item name="otherMessage" type="id"/>
+    <!--账号安全-->
+    <item name="editUserPhone" type="id"/><!--修改手机-->
+    <item name="editUserPassword" type="id"/><!--修改密码-->
+    <item name="editUserEmail" type="id"/><!--修改邮箱-->
+    <item name="strangerLogin" type="id"/><!--陌生登录提醒-->
+    <item name="editUserIdentify" type="id"/><!--修改用户身份验证-->
+    <!--隐私设置-->
+    <item name="allowRecommend" type="id"/><!--允许推荐-->
+    <item name="allowLookSuiJi" type="id"/><!--允许随记-->
+    <item name="allowLookArticle" type="id"/><!--允许文章-->
+    <item name="allowDetail" type="id"/><!--允许看详细信息-->
+</resources>

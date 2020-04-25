@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--用户主要信息栏-->
+    <style name="userMain" parent="titleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_weight">0.25</item>
+    </style>
+
+    <!--小头像-->
+    <style name="littleHead">
+
+    </style>
+</resources>

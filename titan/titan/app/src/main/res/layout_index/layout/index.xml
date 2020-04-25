@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!--标题栏-->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:orientation="horizontal"
+                   android:id="@+id/indexTitle">
+        <TextView style="@style/titleText" android:text="@string/index"/>
+        <TextView style="@style/titleText" android:id="@+id/nowIndexTitle" android:layout_weight="0.55"/>
+        <Button android:layout_width="0dp" android:text="添加" android:layout_height="match_parent" android:layout_weight="0.2" android:id="@+id/addMessage"/>
+    </LinearLayout>
+    <!--一级标签栏-->
+    <com.google.android.material.tabs.TabLayout style="@style/indexLabel" android:id="@+id/suiJiOrArticle">
+        <com.google.android.material.tabs.TabItem style="@style/indexLabel.one" android:text="@string/suiji"/>
+        <com.google.android.material.tabs.TabItem style="@style/indexLabel.one" android:text="@string/article"/>
+    </com.google.android.material.tabs.TabLayout>
+    <!--页面切换-->
+    <LinearLayout style="@style/messageShow" android:id="@+id/messageShow" android:orientation="vertical">
+    </LinearLayout>
+</LinearLayout>

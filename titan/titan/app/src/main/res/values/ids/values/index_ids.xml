@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--随记和文章切换-->
+    <item name="switchSuiJiOrArticle" type="id"/>
+    <!--标签切换-->
+    <item name="switchLabel" type="id"/>
+    <!--随记所需-->
+    <item name="theSuiJi" type="id"/>
+    <!--整体-->
+    <item name="messageShowSuiJi" type="id"/>
+    <!--内容栏-->
+    <item name="messageSuiJi" type="id"/>
+    <!--文章所需-->
+    <!--整体-->
+    <item name="theArticle" type="id"/>
+    <item name="messageShowArticle" type="id"/>
+    <!--评论数-->
+    <item name="commentNumber" type="id"/>
+    <!--文章首图-->
+    <item name="articleImage" type="id"/>
+    <!--题目-->
+    <item name="articleTitle" type="id"/>
+    <!--随记文章通用-->
+    <!--整体-->
+    <item name="views" type="id"/>
+    <!--头像-->
+    <item name="messageShowHeadImage" type="id"/>
+    <!--用户名-->
+    <item name="messageShowUserName" type="id"/>
+    <!--自定义标签-->
+    <item name="messageShowUserLabel" type="id"/>
+    <!--发表日期-->
+    <item name="theDate" type="id"/>
+    <!--关注-->
+    <item name="focus" type="id"/>
+    <!--举报及其它选项-->
+    <item name="report" type="id"/>
+    <!--分享按钮-->
+    <item name="share" type="id"/>
+    <!--评论-->
+    <item name="comment" type="id"/>
+    <!--点赞-->
+    <item name="good" type="id"/>
+    <!--标签-->
+    <item name="label" type="id"/>
+
+    <!--添加内容-->
+    <item name="addMessageShow" type="id"/>
+</resources>

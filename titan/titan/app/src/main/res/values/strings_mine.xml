@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--我的页-->
+    <string name="mine">mine</string>
+    <string name="setting">setting</string>
+    <string name="headImage">headImage</string>
+    <string name="fans">fans</string>
+    <string name="userfocus">focus</string>
+    <string name="blacklist">blacklist</string>
+</resources>

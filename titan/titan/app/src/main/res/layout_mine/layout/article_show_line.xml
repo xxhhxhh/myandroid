@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="200dp">
+    <TextView style="@style/messageShow.article.title" android:textSize="18sp"/>
+    <LinearLayout style="@style/messageShow.article.row">
+        <TextView style="@style/messageShow.article.labelAndTime" />
+        <TextView style="@style/messageShow.comment" android:id="@+id/commentNumber"/>
+    </LinearLayout>
+    <TextView android:layout_height="15dp" android:layout_width="match_parent" android:background="@color/blackBorderBottom"/>
+</LinearLayout>

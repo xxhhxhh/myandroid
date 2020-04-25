@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--文章整体-->
+    <style name="messageShow.article">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">280dp</item>
+        <item name="android:id">@id/messageShowArticle</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--左半区域-->
+    <!--整体-->
+    <style name="messageShow.article.left">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@drawable/suiji_article_border</item>
+    </style>
+    <!--标题区域-->
+    <style name="messageShow.article.title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.65</item>
+        <item name="android:id">@id/articleTitle</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <!--选项栏-->
+    <style name="messageShow.article.row">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.35</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <!--标签和发表时间-->
+    <style name="messageShow.article.labelAndTime">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:id">@id/theDate</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <!--举报-->
+    <style name="messageShow.article.report">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:id">@id/report</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--评论数-->
+    <style name="messageShow.article.commentNumber">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:id">@id/commentNumber</item>
+    </style>
+</resources>

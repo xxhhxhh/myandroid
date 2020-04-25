@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <Button
+                android:text="@string/goBack"
+                android:layout_width="0dp"
+                android:layout_height="50dp" android:id="@+id/goBack" android:layout_weight="0.2"/>
+        <TextView android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="0.2"/>
+        <Button android:layout_width="0dp" android:layout_height="50dp" android:id="@+id/over" android:text="翻转"
+                android:layout_weight="0.2"/>
+        <Button android:visibility="invisible"
+                android:layout_width="0dp" android:text="重拍" android:id="@+id/cancel"
+                android:layout_height="50dp" android:layout_weight="0.2"/>
+        <Button
+                android:text="@string/ok_add" android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="50dp" android:id="@+id/ok_add" android:layout_weight="0.2"/>
+    </LinearLayout>
+    <TextureView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:id="@+id/cameraPreview" android:layout_weight="0.85"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.10">
+        <Button
+                android:text="单击拍照/长按后松开录像"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/cameraUse" android:layout_weight="0.5"/>
+    </LinearLayout>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/showPaiShe" android:layout_weight="0.05"/>
+</LinearLayout>

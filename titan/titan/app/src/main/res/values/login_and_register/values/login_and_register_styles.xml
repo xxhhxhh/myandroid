@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--整体-->
+    <style name="LoginRegister">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--返回键-->
+    <style name="LoginRegister.back">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.08</item>
+        <item name="android:id">@id/goBack</item>
+        <item name="android:text">@string/goBack</item>
+    </style>
+    <!--图片-->
+    <style name="LoginRegister.image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.22</item>
+    </style>
+    <!--登录区域-->
+    <style name="LoginRegister.loginerea">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--登陆区域内部-->
+    <style name="LoginRegister.loginInside">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--输入和按钮基本继承-->
+    <style name="LoginRegister.base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--用户名输入-->
+    <style name="LoginRegister.username" parent="LoginRegister.base">
+        <item name="android:id">@id/username</item>
+        <item name="android:hint">@string/username</item>
+        <item name="android:inputType">phone</item>
+    </style>
+    <!--密码输入-->
+    <style name="LoginRegister.password" parent="LoginRegister.base">
+        <item name="android:id">@id/password</item>
+        <item name="android:hint">@string/password</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+    <!--登录-->
+    <style name="LoginRegister.login" parent="LoginRegister.base">
+        <item name="android:id">@id/phoneLogin</item>
+        <item name="android:text">@string/login</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--切换登录方式-->
+    <style name="LoginRegister.switchLogin" parent="LoginRegister.base">
+        <item name="android:id">@id/switchLogin</item>
+        <item name="android:text">@string/switchLogin</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--忘记密码-->
+    <style name="LoginRegister.forgetPassword" parent="LoginRegister.base">
+        <item name="android:id">@id/forgetPassword</item>
+        <item name="android:text">@string/forgetPassword</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--更新手机号-->
+    <style name="LoginRegister.updatePhone" parent="LoginRegister.base">
+        <item name="android:id">@id/updatePhone</item>
+        <item name="android:text">@string/updatePhone</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--下部外接登录区域-->
+    <style name="LoginRegister.bottom">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!--外部接口按钮-->
+    <style name="LoginRegister.outsideLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+</resources>

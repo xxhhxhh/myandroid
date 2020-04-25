@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://152.136.116.121:3306/titan</property>
+        <property name="connection.username">titan</property>
+        <property name="connection.password">liu35667</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="c3p0.max_size">100000</property>
+        <property name="c3p0.min_size">1</property>
+        <property name="hibernate.c3p0.timeout">2000</property>
+        <property name="hibernate.c3p0.max_statements">1000</property>
+        <property name="c3p0.idle_test_period">1000</property>
+        <property name="c3p0.acquire_increment">10</property>
+        <property name="connection.pool_size">3000</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="connection.release_mode">on_close</property>
+        <property name="hibernate.query.factory_class">org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory</property>
+        <!--数据表-->
+        <mapping class="com.xxhhxhh.database.user.UserInfo"/>
+        <mapping class="com.xxhhxhh.database.suiji.SuiJiLabels"/>
+        <mapping class="com.xxhhxhh.database.article.ArticleLabels"/>
+        <mapping class="com.xxhhxhh.database.user.UserLabels"/>
+        <mapping class="com.xxhhxhh.database.user.Related"/>
+        <mapping class="com.xxhhxhh.database.suiji.SuiJis"/>
+        <mapping class="com.xxhhxhh.database.article.Articles"/>
+        <mapping class="com.xxhhxhh.database.suiji.SuiJiFiles"/>
+        <mapping class="com.xxhhxhh.database.suiji.SuiJiComments"/>
+        <mapping class="com.xxhhxhh.database.suiji.SuiJiReply"/>
+        <mapping class="com.xxhhxhh.database.article.ArticleComments"/>
+        <mapping class="com.xxhhxhh.database.article.ArticleReply"/>
+        <mapping class="com.xxhhxhh.database.article.EveryArticleLabels"/>
+        <mapping class="com.xxhhxhh.database.suiji.EverySuiJiLabels"/>
+        <mapping class="com.xxhhxhh.database.admin.AdminUserInfo"/>
+    </session-factory>
+</hibernate-configuration>

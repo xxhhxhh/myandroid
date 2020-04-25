@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd">
+    <!--hibernate-->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+          p:configLocation="/WEB-INF/classes/hibernate.cfg.xml"/>
+    <bean id="getSessionFactory" class="com.xxhhxhh.titanback.util.GetSessionFactory" p:sessionFactory-ref="sessionFactory"/>
+    <!--密码登录-->
+    <bean id="passwordLoginAction" class="com.xxhhxhh.titanback.loginandregister.PasswordLoginAction" scope="prototype"/>
+    <!--手机号登录-->
+    <bean id="phoneLoginAction" scope="prototype" class="com.xxhhxhh.titanback.loginandregister.PhoneLoginOrRegisterAction"/>
+    <!--可自定义用户信息设置-->
+    <bean id="setUserInfoCustom" class="com.xxhhxhh.titanback.user.infoset.CustomUserInfoSetAction" />
+    <!--状态用户信息设置-->
+    <bean id="setUserInfoSwitch" class="com.xxhhxhh.titanback.user.infoset.SwitchUserInfoSetAction"/>
+    <!--获取设置信息-->
+    <bean id="getSetting" class="com.xxhhxhh.titanback.user.infoget.GetUserSettingAction"/>
+    <!--存储标签查看信息-->
+    <bean id="saveLabelLook" class="com.xxhhxhh.titanback.datasave.labeldo.LabelLookAction"  scope="prototype"/>
+    <!--返回完整文章信息-->
+    <bean id="oneArticle" class="com.xxhhxhh.titanback.article.GetOneArticleAction" scope="prototype"/>
+    <!--返回随记主要信息-->
+    <bean id="oneSuiJiMain" class="com.xxhhxhh.titanback.suiji.DoSuiJiMainAction" scope="prototype"/>
+    <!--保存文章信息-->
+    <bean id="saveArticle" class="com.xxhhxhh.titanback.article.SaveOneArticleAction"  scope="prototype"/>
+    <!--保存随记信息-->
+    <bean id="saveSuiJi" class="com.xxhhxhh.titanback.suiji.SaveSuiJiAction"  scope="prototype"/>
+    <!--传送随记文件-->
+    <bean id="transSuiJiFile" class="com.xxhhxhh.titanback.suiji.DoOneMediaAction" scope="prototype" />
+    <!--文章评论-->
+    <bean id="articleComment" class="com.xxhhxhh.titanback.article.GetArticleCommentAction" scope="prototype"/>
+    <!--随记评论-->
+    <bean id="suijiComment" scope="prototype" class="com.xxhhxhh.titanback.suiji.GetSuiJiCommentAction" />
+    <!--文章回复-->
+    <bean id="articleReply" scope="prototype" class="com.xxhhxhh.titanback.article.GetArticleReply" />
+    <!--随记回复-->
+    <bean id="suijiReply" scope="prototype" class="com.xxhhxhh.titanback.suiji.GetSuiJiReply" />
+    <!--保存文章评论和回复-->
+    <bean id="saveArticleComment" class="com.xxhhxhh.titanback.article.SaveArticleCommentOrReplyAction" scope="prototype" />
+    <!--保存随即评论和回复-->
+    <bean id="saveSuiJiComment" class="com.xxhhxhh.titanback.suiji.SaveSuiJiCommentOrReplyAction" scope="prototype"/>
+    <!--身份认证-->
+    <bean id="identifyDo" class="com.xxhhxhh.titanback.user.infoset.SetUserIdentifyAction" scope="prototype"/>
+    <!--修改密码-->
+    <bean id="setPassword" class="com.xxhhxhh.titanback.user.infoset.SetPasswordAction" scope="prototype" />
+    <!--设置手机-->
+    <bean id="setPhone" class="com.xxhhxhh.titanback.user.infoset.ResetUserPhone"  scope="prototype"/>
+    <!--获取标签-->
+    <bean id="getLabels" class="com.xxhhxhh.titanback.datasave.labeldo.GetLabelsAction" scope="prototype" />
+    <!--用户关系设置-->
+    <bean id="userRelated" class="com.xxhhxhh.titanback.user.infoset.UserRelated" scope="prototype"/>
+    <!--用户关系获取-->
+    <bean id="getUserRelated" class="com.xxhhxhh.titanback.user.infoget.GetUserRelated"  scope="prototype"/>
+    <!--点赞-->
+    <bean id="giveGood" class="com.xxhhxhh.titanback.datasave.goodorreport.GoodDoAction"  scope="prototype"/>
+    <!--获取用户头像-->
+    <bean id="getHead" class="com.xxhhxhh.titanback.user.infoget.GetUserHeadImageAction" scope="prototype"/>
+    <!--保存用户头像-->
+    <bean id="saveHead" scope="prototype" class="com.xxhhxhh.titanback.user.infoset.SaveUserHeadImageAction" />
+    <!--增加观看次数-->
+    <bean id="saveLook" scope="prototype" class="com.xxhhxhh.titanback.datasave.SaveLookNumberAction"/>
+    <!--管理员端配置-->
+    <import resource="adminbackbean.xml"/>
+    <!--查找-->
+    <bean id="search" scope="prototype" class="com.xxhhxhh.titanback.SearchAction"/>
+    <!--举报-->
+    <bean id="toReport" scope="prototype" class="com.xxhhxhh.titanback.datasave.goodorreport.ToReportAction"/>
+</beans>

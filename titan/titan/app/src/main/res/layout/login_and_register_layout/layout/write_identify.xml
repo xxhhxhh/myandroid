@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <EditText android:layout_width="match_parent" android:layout_height="60dp" android:id="@+id/writeRealName"
+              android:hint="真实姓名"/>
+    <TextView android:layout_width="match_parent" android:layout_height="20dp"/>
+    <EditText android:layout_width="match_parent" android:layout_height="60dp" android:id="@+id/writeIdNumber"
+              android:hint="身份证号"/>
+</LinearLayout>

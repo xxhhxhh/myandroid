@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:id="@+id/oneComment"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <!---->
+    <LinearLayout android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="100dp" android:layout_marginTop="20dp">
+
+        <!--头像-->
+        <LinearLayout style="@style/messageShow.headImage">
+            <ImageView android:layout_width="match_parent" android:id="@+id/messageShowHeadImage"
+                       android:layout_height="match_parent"/>
+        </LinearLayout>
+        <!---->
+        <LinearLayout style="@style/messageShow.userNameOrUserLabel">
+            <TextView style="@style/messageShow.userName" android:textAlignment="center" android:textSize="20sp"/>
+            <TextView style="@style/messageShow.userLabel" />
+        </LinearLayout>
+        <Button style="@style/messageShow.focus" android:id="@+id/good" android:text="赞0"/>
+        <Button style="@style/messageShow.report" android:id="@+id/reply" android:text="回复"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="50dp"
+              android:id="@+id/comment"/>
+    <TextView
+            android:text="点击查看评论及回复" android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:id="@+id/toShowWholeComment"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/bottom_border"/>
+</LinearLayout>

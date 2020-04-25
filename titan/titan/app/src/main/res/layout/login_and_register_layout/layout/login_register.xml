@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/LoginRegister">
+    <Button style="@style/LoginRegister.back"/>
+    <ImageView style="@style/LoginRegister.image"/>
+    <LinearLayout style="@style/LoginRegister.loginerea">
+            <include layout="@layout/passwd_login_register" android:visibility="visible" android:id="@+id/passwordLoginShow"/>
+            <include layout="@layout/phone_login_register" android:visibility="gone" android:id="@+id/phoneLoginShow"/>
+    </LinearLayout>
+    <Button style="@style/LoginRegister.switchLogin"/>
+    <LinearLayout style="@style/LoginRegister.bottom">
+            <ImageButton style="@style/LoginRegister.outsideLogin"/>
+        <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.4"/>
+            <ImageButton style="@style/LoginRegister.outsideLogin"/>
+    </LinearLayout>
+</LinearLayout>

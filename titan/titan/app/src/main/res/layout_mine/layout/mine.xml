@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <!--标题栏-->
+        <LinearLayout android:layout_height="0dp" android:layout_width="match_parent" android:layout_weight="0.08"
+                      android:orientation="horizontal">
+            <TextView style="@style/titleText" android:text="@string/mine" android:id="@+id/mineText"/>
+            <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.70"/>
+            <Button style="@style/titleText" android:textSize="15sp" android:text="@string/setting" android:id="@+id/showSetting"/>
+        </LinearLayout>
+        <!--头像栏-->
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+                        android:layout_weight="0.30" android:background="@color/head">
+            <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/headImage"
+                       android:layout_centerInParent="true"
+                       android:contentDescription="@string/headImage"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="50dp" android:layout_below="@+id/headImage"
+                      android:layout_centerHorizontal="true" android:text="未登录" android:id="@+id/showUsername"/>
+        </RelativeLayout>
+        <!--粉丝与关注等信息-->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.08"
+                      android:orientation="horizontal" android:background="@color/userMain">
+            <TextView style="@style/userMain" android:text="@string/suiji" android:id="@+id/showSuiJi"/>
+            <TextView style="@style/userMain" android:text="@string/article" android:id="@+id/showArticle"/>
+            <TextView style="@style/userMain" android:text="@string/focus" android:id="@+id/showFocus"/>
+            <TextView style="@style/userMain" android:text="@string/blacklist" android:id="@+id/showBlackList"/>
+        </LinearLayout>
+        <!--用户推荐-->
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.2">
+            <!--头像-->
+            <TableRow>
+
+            </TableRow>
+            <!--用户名-->
+            <TableRow>
+
+            </TableRow>
+        </TableLayout>
+        <!--提示信息-->
+        <ListView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.34"
+                  android:id="@+id/tipMessages"/>
+</LinearLayout>

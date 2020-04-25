@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="backJSON" extends="json-default">
+        <!--密码登录-->
+        <action name="passwordLogin" class="passwordLoginAction">
+            <result type="json"/>
+        </action>
+        <!--手机号登录-->
+        <action name="phoneLogin" class="phoneLoginAction">
+            <result type="json"/>
+        </action>
+        <!--用户自定义信息修改-->
+        <action name="setCustomUserInfo" class="setUserInfoCustom">
+            <result type="json"/>
+        </action>
+        <!--用户状态信息修改-->
+        <action name="setSwitchUserInfo" class="setUserInfoSwitch">
+            <result type="json"/>
+        </action>
+        <!--获取设置信息-->
+        <action name="getSetting" class="getSetting">
+            <result type="json"/>
+        </action>
+        <!--保存标签查看信息-->
+        <action name="saveLabelLook" class="saveLabelLook">
+            <result type="json"/>
+        </action>
+        <!--获取随记主要信息-->
+        <action name="oneSuiJiMain" class="oneSuiJiMain">
+            <result type="json" name="success"/>
+            <result name="error" type="json">
+                <param name="mainMessage">null</param>
+            </result>
+        </action>
+        <!--获取完整文章信息-->
+        <action name="oneArticle" class="oneArticle">
+            <result type="json" name="success"/>
+            <result type="json" name="error">
+                <param name="theUrl">null</param>
+            </result>
+        </action>
+        <!--存储文章信息-->
+        <action name="saveArticle" class="saveArticle">
+            <result type="json"/>
+        </action>
+        <!--随记信息-->
+        <action name="saveSuiJi" class="saveSuiJi">
+            <result type="json"/>
+        </action>
+        <!--返回随记文件-->
+        <action name="oneMedia" class="transSuiJiFile">
+            <!--返回文件-->
+            <result type="json"/>
+        </action>
+        <!--文章评论-->
+        <action name="articleComment" class="articleComment">
+            <result type="json"/>
+        </action>
+        <!--随记评论-->
+        <action name="suijiComment" class="suijiComment">
+            <result type="json"/>
+        </action>
+        <!--文章回复-->
+        <action name="articleReply" class="articleReply">
+            <result type="json"/>
+        </action>
+        <!--随记回复-->
+        <action name="suijiReply" class="suijiReply">
+            <result type="json"/>
+        </action>
+        <!--文章评论保存-->
+        <action name="saveArticleComment" class="saveArticleComment">
+            <result type="json"/>
+        </action>
+        <!--随记评论保存-->
+        <action name="saveSuiJiComment" class="saveSuiJiComment">
+            <result type="json"/>
+        </action>
+        <!--身份认证-->
+        <action name="identifyDo" class="identifyDo">
+            <result type="json"/>
+        </action>
+        <!--修改密码-->
+        <action name="setPassword" class="setPassword">
+            <result type="json"/>
+        </action>
+        <!--修改手机-->
+        <action name="setPhone" class="setPhone">
+            <result type="json"/>
+        </action>
+        <!--得到标签-->
+        <action name="getLabels" class="getLabels">
+            <result type="json"/>
+        </action>
+        <!--用户关系设置-->
+        <action name="userRelated" class="userRelated">
+            <result type="json"/>
+        </action>
+        <!--用户关系获取-->
+        <action name="getUserRelated" class="getUserRelated">
+            <result type="json"/>
+        </action>
+        <!--点赞-->
+        <action name="giveGood" class="giveGood">
+            <result type="json"/>
+        </action>
+        <!--保存头像-->
+        <action name="saveHead" class="saveHead">
+            <result type="json"/>
+        </action>
+        <!--获取头像-->
+        <action name="getHead" class="getHead">
+            <result type="stream"/>
+        </action>
+        <!--更新观看-->
+        <action name="saveLook" class="saveLook">
+            <result type="json"/>
+        </action>
+        <!--举报-->
+        <action name="toReport" class="toReport">
+            <result type="json"/>
+        </action>
+        <!--查找-->
+        <action name="search" class="search">
+            <result type="json"/>
+        </action>
+    </package>
+
+    <package name="default-two" extends="json-default">
+        <!--获取用户信息-->
+        <action name="getUserMessage" class="getUserMessage">
+            <result type="json"/>
+        </action>
+        <!--登录-->
+        <action name="login" class="login">
+            <result name="success" type="redirect">pages/index.jsp?username=${username}
+            </result>
+            <result name="error">error.jsp</result>
+        </action>
+        <!--注册-->
+        <action name="register" class="register">
+            <result name="success" type="redirect">pages/index.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <!--找回-->
+        <action name="findback" class="findBack">
+            <result name="success">show_message.jsp</result>
+            <result name="error">error.jsp</result>
+        </action>
+        <!--获取随记信息-->
+        <action name="getSimpleSuiJi" class="getSimpleSuiJi">
+            <result type="json"/>
+        </action>
+        <!--获取文章信息-->
+        <action name="getSimpleArticle" class="getSimpleArticle">
+            <result type="json"/>
+        </action>
+        <!--获取所有用户关系-->
+        <action name="getRelated" class="getRelated">
+            <result type="json"/>
+        </action>
+
+    </package>
+</struts>

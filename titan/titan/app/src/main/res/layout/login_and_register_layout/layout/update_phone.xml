@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button style="@style/LoginRegister.back"/>
+    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1"/>
+    <EditText style="@style/updatePhone.input.new"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="0.1">
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:ems="10" android:hint="@string/inputYanZhengMa"
+                android:id="@+id/inputYanZhengMa" android:layout_weight="0.8"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" android:id="@+id/reGet" android:layout_weight="0.2"/>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1"
+              android:text="在下面输入您旧帐号的身份验证信息(如果未设置，将不允许找回)" android:gravity="bottom"/>
+    <EditText style="@style/updatePhone.input.oldPhone"/>
+    <EditText style="@style/updatePhone.name"/>
+    <EditText style="@style/updatePhone.idNumber"/>
+    <Button style="@style/updatePhone.confirm"/>
+    <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.2"/>
+</LinearLayout>

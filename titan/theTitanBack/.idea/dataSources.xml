@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="web:WEB-INF:classes:hibernate.cfg.xml/Hibernate" uuid="2d9b8a5d-b7bb-483b-b22a-f5d5d6ccb0c7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/1/Desktop/Titan/theTitanBack/web/WEB-INF/classes/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://152.136.116.121:3306/titan</jdbc-url>
+    </data-source>
+  </component>
+</project>

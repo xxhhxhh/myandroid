@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--随记整体-->
+    <style name="messageShow.suiJi">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/suiji_article_border</item>
+    </style>
+
+    <!--内容栏-->
+    <style name="messageShow.text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:id">@id/messageSuiJi</item>
+    </style>
+    <!--图片、标签、分享按钮栏-->
+    <style name="messageShow.table">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:stretchColumns">*</item>
+    </style>
+    <!--图片栏每一行-->
+    <style name="messageShow.tableRow">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+    <!--按钮-->
+    <style name="messageShow.button" parent="messageShow.tableRow">
+        <item name="android:layout_height">50dp</item>
+    </style>
+    <!--日期-->
+    <style name="messageShow.date" parent="messageShow.button">
+        <item name="android:id">@id/theDate</item>
+    </style>
+    <!--标签-->
+    <style name="messageShow.label" parent="messageShow.button">
+        <item name="android:id">@id/label</item>
+    </style>
+    <!--分享-->
+    <style name="messageShow.share" parent="messageShow.button">
+        <item name="android:id">@id/share</item>
+    </style>
+    <!--评论-->
+    <style name="messageShow.comment" parent="messageShow.button">
+        <item name="android:id">@id/comment</item>
+    </style>
+    <!--点赞-->
+    <style name="messageShow.good" parent="messageShow.button">
+        <item name="android:id">@id/good</item>
+    </style>
+</resources>

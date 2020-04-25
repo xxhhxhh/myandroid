@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--设置中单行按钮-->
+    <!--选项按钮-->
+    <style name="settingOption">
+        <item name="android:layout_weight">0.06</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!--每一栏结构-->
+    <style name="userInfoSetting">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">0.1</item>
+    </style>
+
+
+    <!--文本显示-->
+    <style name="userInfoText">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <!--文本编辑-->
+    <style name="userInfoEdit" parent="userInfoText">
+        <item name="android:layout_weight">0.7</item>
+    </style>
+
+    <!--按钮-->
+    <style name="userInfoButton">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.5</item>
+    </style>
+
+    <!--编辑-->
+    <style name="userInfoButton.edit" parent="userInfoButton">
+        <item name="android:text">@string/editUserInfo</item>
+        <item name="android:id">@id/editUserInfo</item>
+    </style>
+
+    <!--保存-->
+    <style name="userInfoButton.save" parent="userInfoButton">
+        <item name="android:text">@string/saveUserInfo</item>
+        <item name="android:id">@id/saveUserInfo</item>
+    </style>
+</resources>

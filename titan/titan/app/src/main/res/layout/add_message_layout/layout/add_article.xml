@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="match_parent" android:id="@+id/add_article"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <Button
+                android:text="@string/goBack"
+                android:layout_width="0dp"
+                android:layout_height="50dp" android:id="@+id/goBack" android:layout_weight="0.2"/>
+        <TextView
+                android:layout_width="0dp" android:gravity="center" android:textSize="20sp"
+                android:layout_height="50dp" android:layout_weight="0.3" android:text="文章"/>
+        <Button
+                android:text="预览"
+                android:layout_width="0dp"
+                android:layout_height="50dp" android:id="@+id/toPreView" android:layout_weight="0.3"/>
+        <Button
+                android:text="@string/ok_add"
+                android:layout_width="0dp"
+                android:layout_height="50dp" android:id="@+id/ok_add" android:layout_weight="0.2"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:id="@+id/showLabels" android:orientation="horizontal">
+
+    </LinearLayout>
+    <EditText
+            android:layout_width="match_parent" android:hint="标题"
+            android:layout_height="80dp" android:id="@+id/editTitle"/>
+    <LinearLayout
+            android:layout_width="match_parent" android:orientation="vertical"
+            android:layout_height="0dp" android:layout_weight="0.9">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="50dp" android:layout_weight="0.1" android:orientation="horizontal">
+            <Button android:layout_width="70dp" android:layout_height="50dp" android:id="@+id/webViewBack" android:visibility="invisible"
+                    android:text="@string/goBack"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="50dp" android:text="点击预览进入预览模式"
+                    android:id="@+id/previewText"/>
+        </LinearLayout>
+        <ProgressBar android:layout_width="match_parent" android:layout_height="10dp" android:id="@+id/progressNow"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        <WebView android:layout_width="match_parent" android:layout_height="500dp" android:id="@+id/makeArticle"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_gravity="bottom"
+            android:layout_height="0dp" android:layout_weight="0.1">
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:background="@mipmap/photo_icon"
+                android:id="@+id/add_picture" android:layout_weight="0.33"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:background="@mipmap/label_chose"
+                android:id="@+id/add_topic"
+                android:layout_weight="0.33"/>
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent" android:background="@mipmap/href"
+                android:id="@+id/addHref" android:layout_weight="0.33"/>
+    </LinearLayout>
+</LinearLayout>

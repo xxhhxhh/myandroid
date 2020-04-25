@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              style="@style/userInfoSetting">
+    <!--编辑-->
+    <Button style="@style/userInfoButton.edit"/>
+    <!--保存-->
+    <Button style="@style/userInfoButton.save"/>
+</LinearLayout>

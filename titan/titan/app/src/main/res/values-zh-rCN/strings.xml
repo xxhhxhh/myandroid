@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--通用-->
+    <string name="app_name">泰坦</string>
+    <!--随记-->
+    <string name="suiji">随记</string>
+    <!--文章-->
+    <string name="article">文章</string>
+    <!--用户信息-->
+    <!--用户名-->
+    <string name="username">手机号</string>
+    <!--密码-->
+    <string name="password">密码</string>
+    <!--昵称-->
+    <string name="nickName">昵称</string>
+    <!--姓名-->
+    <string name="realName">姓名</string>
+    <!--出生日期-->
+    <string name="birthday">生日</string>
+    <!--爱好-->
+    <string name="loveThing">爱好</string>
+    <!--备注-->
+    <string name="otherMessage">备注</string>
+    <!--确认-->
+    <string name="confirm">确认</string>
+    <!--当前手机号-->
+    <string name="nowPhone">当前手机号：</string>
+    <!--输入验证码-->
+    <string name="inputYanZhengMa">输入验证码</string>
+
+    <!--获取验证码-->
+    <string name="reGet">获取</string>
+    <!--选项-->
+    <string name="report">...</string>
+    <!--举报-->
+    <string name="no">举报</string>
+    <!--不感兴趣理由-->
+    <string name="reason">不感兴趣理由</string>
+    <!--弹出选项栏-->
+    <string name="popUp">选项栏</string>
+</resources>

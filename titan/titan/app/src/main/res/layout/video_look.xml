@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="300dp">
+    <SurfaceView android:layout_width="match_parent" android:layout_height="200dp" android:id="@+id/showVideo"/>
+    <LinearLayout android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        <Button
+                android:text="播放" android:alpha="0.7"
+                android:layout_width="0dp"
+                android:layout_height="50dp" android:id="@+id/playVideo" android:layout_weight="0.3"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="50dp" android:layout_weight="0.7"/>
+    </LinearLayout>
+
+</FrameLayout>

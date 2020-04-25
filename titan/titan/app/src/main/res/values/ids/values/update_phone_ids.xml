@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--新手机号-->
+    <item name="newPhone" type="id"/>
+    <!--身份证号-->
+    <item name="idNumber" type="id"/>
+</resources>

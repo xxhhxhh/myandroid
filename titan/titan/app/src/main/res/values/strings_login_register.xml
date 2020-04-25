@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--登录-->
+    <string name="login">login</string>
+    <!--切换登录方式-->
+    <string name="switchLogin">switchlogin</string>
+    <!--忘记密码-->
+    <string name="forgetPassword">forgetpassword</string>
+    <!--手机号更换-->
+    <string name="updatePhone">updatephone</string>
+</resources>

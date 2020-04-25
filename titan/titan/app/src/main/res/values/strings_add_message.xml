@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--确定-->
+    <string name="ok_add">add</string>
+    <!--位置-->
+    <string name="location">location</string>
+    <!--隐私-->
+    <string name="privacy_self">privacy</string>
+    <!--公开-->
+    <string name="open">open</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--选择相册图片-->
+    <item name="chosePicture" type="id"/>
+    <!--拍照-->
+    <item name="openCamera" type="id"/>
+</resources>

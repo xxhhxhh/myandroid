@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--旧手机-->
+    <string name="oldPhone">oldphone</string>
+    <!--新手机-->
+    <string name="newPhone">newPhone</string>
+    <!--身份证号-->
+    <string name="idNumber">idnumber</string>
+</resources>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>富文本编辑</title>
+    <script type="text/javascript">
+
+        /*添加外层标签*/
+        function outDiv(inLabel)
+        {
+            var outdiv = document.createElement("div");
+            outdiv.style.textAlign = "center";
+            outdiv.contentEditable= true;
+            outdiv.appendChild(inLabel);
+            document.getElementById("main").appendChild(outdiv);
+            var nextDiv = document.createElement("div");
+            document.getElementById("main").appendChild(nextDiv);
+            nextDiv.outerHTML = "<div style='margin-left: 30px; margin-right: 30px;' contenteditable='true'><br></div>"
+        }
+
+        /*添加图片*/
+        function addPhoto(path, id)
+        {
+            var addImg = document.createElement("img");
+            outDiv(addImg);
+            addImg.outerHTML = "<img src='" + path + "' alt='图片存在问题' id='" + id + "'/>";
+
+        }
+
+
+        /*返回整体网页*/
+        function wholeHtml()
+        {
+            return unescape(document.getElementsByTagName('html')[0].outerHTML.toString());
+        }
+
+        /*添加链接*/
+        function addHref(href)
+        {
+            var a = document.createElement("a");
+            a.href = href;
+            a.innerText = href;
+            a.contentEditable = true;
+            outDiv(a);
+        }
+
+        /*可编辑设置*/
+        function setEditAble(type)
+        {
+            if(!type)
+            {
+                getEdit("div", type);
+                getEdit("img", type);
+                getEdit("a", type);
+            }
+            else
+            {
+                getEdit("div", type);
+                getEdit("img", type);
+                getEdit("a", type);
+            }
+        }
+        /*获取对象*/
+        function getEdit(label, type)
+        {
+            var aa =  document.getElementsByTagName(label);
+            if(!type)
+            {
+                for( var a1 = 0; a1 < aa.length; a1++)
+                {
+                    aa[a1].contentEditable = false;
+                }
+            }
+            else
+            {
+                for( var a1 = 0; a1 < aa.length; a1++)
+                {
+                    aa[a1].contentEditable = true;
+                }
+            }
+        }
+
+        /*获取图片数量*/
+        function getPhotoNumber()
+        {
+            if(document.getElementsByTagName("img").length != null)
+            {
+                return document.getElementsByTagName("img").length;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="main" contenteditable="true" style="margin-left: 30px; margin-right: 30px;">
+    </div>
+</body>
+</html>

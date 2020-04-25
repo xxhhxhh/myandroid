@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--整体-->
+    <style name="updatePhone">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <!--输入-->
+    <style name="updatePhone.input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.1</item>
+    </style>
+    <!--新手机号-->
+    <style name="updatePhone.input.new" parent="updatePhone.input">
+        <item name="android:hint">@string/newPhone</item>
+        <item name="android:id">@id/newPhone</item>
+    </style>
+    <!--旧手机号-->
+    <style name="updatePhone.input.oldPhone" parent="updatePhone.input">
+        <item name="android:hint">@string/oldPhone</item>
+        <item name="android:id">@id/username</item>
+    </style>
+    <!--姓名-->
+    <style name="updatePhone.name" parent="updatePhone.input">
+        <item name="android:id">@id/realName</item>
+        <item name="android:hint">@string/realName</item>
+    </style>
+    <!--身份证号-->
+    <style name="updatePhone.idNumber" parent="updatePhone.input">
+        <item name="android:id">@id/idNumber</item>
+        <item name="android:hint">@string/idNumber</item>
+    </style>
+    <!--确认按钮-->
+    <style name="updatePhone.confirm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:id">@id/confirm</item>
+        <item name="android:text">@string/confirm</item>
+    </style>
+</resources>

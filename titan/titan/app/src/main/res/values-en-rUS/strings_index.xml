@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主页-->
+    <string name="index">Index</string>
+    <!--关注-->
+    <string name="focus">focus</string>
+    <!--分享-->
+    <string name="share">share</string>
+    <!--评论-->
+    <string name="comment">comment</string>
+    <!--点赞-->
+    <string name="good">good</string>
+</resources>

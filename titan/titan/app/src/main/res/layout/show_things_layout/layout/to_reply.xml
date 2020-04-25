@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine" android:gravity="top"
+            android:id="@+id/editReplyOrComment"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="50dp">
+        <Button
+                android:text="确定"
+                android:layout_width="60dp"
+                android:layout_height="60dp" android:id="@+id/ok_add"/>
+        <Button
+                android:text="取消"
+                android:layout_width="60dp"
+                android:layout_height="60dp" android:id="@+id/cancel"/>
+    </LinearLayout>
+</LinearLayout>

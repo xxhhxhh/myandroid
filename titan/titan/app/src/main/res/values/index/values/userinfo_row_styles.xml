@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--头像-->
+    <style name="messageShow.headImage">
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--用户名及自定义标签外结构-->
+    <style name="messageShow.userNameOrUserLabel">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">0.4</item>
+    </style>
+
+    <!--用户名及自定义标签文本-->
+    <style name="messageShow.userNameOrUserLabel.base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_weight">0.4</item>
+    </style>
+
+    <!--用户名-->
+    <style name="messageShow.userName" parent="messageShow.userNameOrUserLabel.base">
+        <item name="android:id">@id/messageShowUserName</item>
+    </style>
+    <!--自定义标签-->
+    <style name="messageShow.userLabel" parent="messageShow.userNameOrUserLabel.base">
+        <item name="android:id">@id/messageShowUserLabel</item>
+    </style>
+
+    <!--关注、举报按钮-->
+    <style name="messageShow.focusAndReportBase">
+        <item name="android:layout_weight">0.2</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--关注-->
+    <style name="messageShow.focus" parent="messageShow.focusAndReportBase">
+        <item name="android:id">@id/focus</item>
+        <item name="android:text">@string/focus</item>
+    </style>
+    <!--举报-->
+    <style name="messageShow.report" parent="messageShow.focusAndReportBase">
+        <item name="android:id">@id/report</item>
+        <item name="android:text">...</item>
+    </style>
+</resources>

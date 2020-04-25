@@ -1,0 +1,39 @@
+<resources>
+    <!--通用-->
+    <string name="app_name">titan</string>
+    <!--随记-->
+    <string name="suiji">vlog</string>
+    <!--文章-->
+    <string name="article">article</string>
+    <!--用户信息-->
+    <!--用户名-->
+    <string name="username">phonenumber</string>
+    <!--密码-->
+    <string name="password">password</string>
+    <!--昵称-->
+    <string name="nickName">nickname</string>
+    <!--姓名-->
+    <string name="realName">realname</string>
+    <!--出生日期-->
+    <string name="birthday">birthday</string>
+    <!--爱好-->
+    <string name="loveThing">loveThing</string>
+    <!--备注-->
+    <string name="otherMessage">othermessage</string>
+    <!--确认-->
+    <string name="confirm">confirm</string>
+    <!--当前手机号-->
+    <string name="nowPhone">nowphone</string>
+    <!--输入验证码-->
+    <string name="inputYanZhengMa">inputYanZhengMa</string>
+    <!--重新获取验证码-->
+    <string name="reGet">reget</string>
+    <!--选项-->
+    <string name="report">...</string>
+    <!--举报-->
+    <string name="no">report</string>
+    <!--不感兴趣理由-->
+    <string name="reason">reason</string>
+    <!--弹出选项栏-->
+    <string name="popUp">popup</string>
+</resources>

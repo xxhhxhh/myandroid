@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/messageShow.suiJi" android:id="@+id/theSuiJi">
+
+        <TextView style="@style/messageShow.text"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:orientation="vertical" android:id="@+id/showMedia">
+        <include layout="@layout/main_page_picture_look" android:visibility="gone" android:id="@+id/pictureLook"/>
+    </LinearLayout>
+        <TableLayout style="@style/messageShow.table">
+            <TableRow>
+                <TextView style="@style/messageShow.label"/>
+                <TextView style="@style/messageShow.date"/>
+                <TextView style="@style/messageShow.button"/>
+            </TableRow>
+            <TableRow>
+                <Button style="@style/messageShow.share" />
+                <Button style="@style/messageShow.comment"/>
+                <Button style="@style/messageShow.good" android:id="@+id/giveGood"/>
+            </TableRow>
+        </TableLayout>
+    <TextView android:layout_height="15dp" android:layout_width="match_parent" android:background="@color/blackBorderBottom"/>
+</LinearLayout>

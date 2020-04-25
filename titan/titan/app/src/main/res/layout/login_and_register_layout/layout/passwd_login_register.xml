@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/LoginRegister.loginInside" >
+
+        <EditText style="@style/LoginRegister.username"/>
+        <TextView android:layout_height="20dp" android:layout_width="match_parent"/>
+        <EditText style="@style/LoginRegister.password"/>
+
+        <TextView android:layout_height="20dp" android:layout_width="match_parent"/>
+        <Button style="@style/LoginRegister.login" android:id="@+id/passwordLogin"/>
+        <Button style="@style/LoginRegister.forgetPassword"/>
+</LinearLayout>

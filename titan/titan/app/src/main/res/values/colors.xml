@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--头像栏-->
+    <color name="head">#3542d0</color>
+    <!--用户主要信息栏-->
+    <color name="userMain">#2933a4</color>
+    <!--设置界面-->
+    <color name="settingBack">#2714b1</color>
+
+    <!--黑色间隔条-->
+    <color name="blackBorderBottom">#000000</color>
+</resources>

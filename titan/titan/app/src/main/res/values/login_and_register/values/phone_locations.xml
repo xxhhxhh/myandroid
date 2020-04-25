@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="phoneLocations">
+        <item>+86</item>
+        <item>+22</item>
+        <item>+11</item>
+        <item>+33</item>
+    </string-array>
+</resources>

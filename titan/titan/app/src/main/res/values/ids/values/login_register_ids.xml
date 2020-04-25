@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--登录-->
+    <item name="phoneLogin" type="id"/>
+    <item name="passwordLogin" type="id"/>
+    <!--更新手机号-->
+    <item name="updatePhone" type="id"/>
+    <!--忘记密码-->
+    <item name="forgetPassword" type="id"/>
+    <!--切换登录方式-->
+    <item name="switchLogin" type="id"/>
+</resources>

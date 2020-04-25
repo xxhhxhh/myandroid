@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/LoginRegister.loginInside" xmlns:android="http://schemas.android.com/apk/res/android">
+        <Spinner android:layout_width="100dp" android:layout_height="100dp" android:id="@+id/showPhoneLocation"
+                android:entries="@array/phoneLocations"/>
+        <EditText style="@style/LoginRegister.username" android:id="@+id/phoneLoginEditText"/>
+        <TextView android:layout_height="20dp" android:layout_width="match_parent"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="0.1">
+                <EditText android:layout_width="0dp" android:layout_height="match_parent" android:inputType="number" android:ems="10" android:hint="@string/inputYanZhengMa"
+                        android:id="@+id/inputYanZhengMa" android:layout_weight="0.8"/>
+                <Button android:layout_width="0dp" android:text="@string/reGet" android:layout_height="wrap_content" android:id="@+id/reGet" android:layout_weight="0.2"/>
+        </LinearLayout>
+        <Button style="@style/LoginRegister.login"/>
+        <Button style="@style/LoginRegister.updatePhone"/>
+</LinearLayout>

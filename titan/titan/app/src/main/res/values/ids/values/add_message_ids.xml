@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--页面切换-->
+    <item name="addMessagePage" type="id"/>
+    <!--确定-->
+    <item name="ok_add" type="id"/>
+    <!--添加图片-->
+    <item name="add_picture" type="id"/>
+    <!--@人-->
+    <item name="at_one" type="id"/>
+    <!--添加话题-->
+    <item name="add_topic" type="id"/>
+    <!--位置-->
+    <item name="location" type="id"/>
+    <!--不显示位置-->
+    <item name="noLocation" type="id"/>
+    <!--公开-->
+    <item type="id" name="open"/>
+    <item name="noOpen" type="id"/>
+</resources>

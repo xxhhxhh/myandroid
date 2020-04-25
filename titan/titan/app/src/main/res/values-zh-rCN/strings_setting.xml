@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--设置-->
+    <string name="goBack">返回</string>
+    <string name="userInfo">用户信息</string>
+    <string name="security">账号安全</string>
+    <string name="privacy">隐私设置</string>
+    <string name="youthModel">青少年模式</string>
+    <string name="logOut">注销</string>
+    <!--用户信息及设置-->
+    <string name="editUserInfo">编辑</string>
+    <string name="saveUserInfo">保存</string>
+    <!--用户隐私设置-->
+    <string name="allowLookSuiJi">允许别人看我的随记</string>
+    <string name="allowLookArticle">允许别人看我的文章</string>
+    <string name="allowRecommend">允许推荐</string>
+    <string name="allowDetail">允许别人看我的信息</string>
+    <!--账号安全-->
+    <string name="editUserPhone">修改手机号</string>
+    <string name="editUserPassword">修改密码</string>
+    <string name="strangerLogin">陌生登录提醒</string>
+</resources>

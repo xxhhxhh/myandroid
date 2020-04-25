@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!--设置菜单标记-->
+        <!--主设置菜单-->
+        <integer name="MAIN_SETTING_MENU">0</integer>
+        <!--用户信息菜单-->
+        <integer name="USER_INFO_MENU">1</integer>
+        <!--用户隐私菜单-->
+        <integer name="USER_PRIVACY_MENU">2</integer>
+        <!--账号与安全菜单-->
+        <integer name="USER_SECURITY_MENU">3</integer>
+
+        <!--按钮类型标记,50起始-->
+        <!--普通按钮-->
+        <integer name="ORDINARY_BUTTON">50</integer>
+        <!--开关按钮-->
+        <integer name="SWITCH_BUTTON">51</integer>
+
+        <!--主页内容，10开始-->
+        <!--随记-->
+        <integer name="SuiJi">10</integer>
+        <!--文章-->
+        <integer name="Article">11</integer>
+</resources>

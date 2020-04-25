@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--设置-->
+    <string name="goBack">GoBack</string>
+    <string name="userInfo">UserInfo</string>
+    <string name="security">security</string>
+    <string name="privacy">privacy</string>
+    <string name="youthModel">youthmodel</string>
+    <string name="logOut">LogOut</string>
+    <!--用户信息及设置-->
+    <string name="editUserInfo">Edit</string>
+    <string name="saveUserInfo">Save</string>
+    <!--用户隐私设置-->
+    <string name="allowLookSuiJi">AllowLookVlog</string>
+    <string name="allowLookArticle">AllowLookArticle</string>
+    <string name="allowRecommend">AllowRecommend</string>
+    <string name="allowDetail">AllowDetail</string>
+    <!--账号安全-->
+    <string name="editUserPhone">EditPhone</string>
+    <string name="editUserPassword">EditPassword</string>
+    <string name="strangerLogin">StrangerLogin</string>
+</resources>

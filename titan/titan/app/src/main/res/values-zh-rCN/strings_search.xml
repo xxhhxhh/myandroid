@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--搜索页-->
+    <string name="search">搜索</string>
+    <string name="findTipText">查找</string>
+</resources>
